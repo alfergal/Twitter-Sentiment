@@ -5,4 +5,4 @@ models/
 outputs/
 data/raw/
 data/processed/
-.env
+.venv/
