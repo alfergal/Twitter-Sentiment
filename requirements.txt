@@ -9,3 +9,7 @@ gradio
 transformers
 streamlit
 joblib
+transformers
+datasets
+torch
+accelerate
