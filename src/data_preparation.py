@@ -8,7 +8,9 @@ def load_and_prepare_dataset(path):
     df.columns = ["target", "text"]
 
     # Mapear etiquetas: 0 = negativo, 2 = neutro, 4 = positivo
-    df["target"] = df["target"].map({0: 0, 2: 1, 4: 2})  # 0-neg, 1-neutro, 2-positivo
+    df["target"] = df["target"].map({0: 0, 4: 1})
+    df = df[df["target"].notnull()]
+
 
     return df
 
